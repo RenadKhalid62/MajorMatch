@@ -21,7 +21,7 @@
 <!-- Lists of shared and different courses -->
 <div class="two-col wide">
 
-  <!-- Shared courses -->
+  <!-- Shared courses here --> 
   <div class="card">
     <h3>Courses you share
       <span class="count-pill" id="sharedCount">0</span>
