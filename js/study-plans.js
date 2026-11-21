@@ -1,4 +1,4 @@
-// Display study plans for the selected major
+// Show study plans for the selected major.
 document.addEventListener('DOMContentLoaded', function () {
 var tabs = $('#planTabs');
 if (!tabs) return;
@@ -8,15 +8,18 @@ if (!MAJORS[current]) current = 'cs';
 
 var courses = [];
 
-// Create major buttons
-Object.keys(MAJORS).forEach(function (m) {
+// Create major buttons.
+Object.keys(MAJORS).forEach(function (major) {
 var btn = document.createElement('button');
+
 btn.className = 'pick-card';
-btn.dataset.m = m;
-btn.innerHTML = '<span>' + MAJORS[m].icon + '</span><b>' + MAJORS[m].name + '</b>';
+btn.dataset.m = major;
+btn.innerHTML =
+  '<span>' + MAJORS[major].icon + '</span>' +
+  '<b>' + MAJORS[major].name + '</b>';
 
 btn.addEventListener('click', function () {
-  current = m;
+  current = major;
   render();
 });
 
@@ -25,7 +28,7 @@ tabs.appendChild(btn);
 
 $('#courseSearch').addEventListener('input', render);
 
-// Show courses for the selected major
+// Display the selected plan.
 function render() {
 $all('.pick-card', tabs).forEach(function (btn) {
 btn.classList.toggle('selected', btn.dataset.m === current);
@@ -33,8 +36,8 @@ btn.classList.toggle('selected', btn.dataset.m === current);
 
 var term = $('#courseSearch').value.trim().toLowerCase();
 
-var mine = courses.filter(function (c) {
-  return c.major === current;
+var mine = courses.filter(function (course) {
+  return course.major === current;
 });
 
 $('#planSummary').textContent =
@@ -43,11 +46,11 @@ $('#planSummary').textContent =
 var html = '';
 var found = 0;
 
-// Display courses level by level
+// Display courses by level.
 for (var level = 1; level <= 10; level++) {
-  var list = mine.filter(function (c) {
-    return Number(c.level) === level &&
-      (!term || (c.name + ' ' + c.code).toLowerCase().includes(term));
+  var list = mine.filter(function (course) {
+    return Number(course.level) === level &&
+      (!term || (course.name + ' ' + course.code).toLowerCase().includes(term));
   });
 
   found += list.length;
@@ -66,19 +69,19 @@ $('#planLevels').innerHTML = found || !term
   : '<p class="muted">No matching courses found.</p>';
 }
 
-// Course card design
-function card(c) {
-return '<div class="course-card" style="border-top-color:' + MAJORS[c.major].color + '">' +
-'<span class="code">' + c.code + '</span>' +
-'<h4>' + c.name + '</h4>' +
-(c.name_ar ? '<p class="course-ar">' + c.name_ar + '</p>' : '') +
+// Create a course card.
+function card(course) {
+return '<div class="course-card">' +
+'<span class="code">' + course.code + '</span>' +
+'<h4>' + course.name + '</h4>' +
+(course.name_ar ? '<p class="course-ar">' + course.name_ar + '</p>' : '') +
 '<div class="course-meta">' +
-'<span>⏱ ' + c.credits + ' credit hours</span>' +
-'<span>' + (c.prerequisite ? 'Prerequisite: ' + c.prerequisite : 'No prerequisite') + '</span>' +
+'<span>⏱ ' + course.credits + ' credit hours</span>' +
+'<span>' + (course.prerequisite ? 'Prerequisite: ' + course.prerequisite : 'No prerequisite') + '</span>' +
 '</div></div>';
 }
 
-// Load course data
+// Load courses.
 fetch('get-courses.php')
 .then(function (response) {
 return response.json();
