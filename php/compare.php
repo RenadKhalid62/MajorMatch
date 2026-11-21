@@ -1,27 +1,28 @@
-<!-- Message about the source of course data -->
+<!-- Data source -->
 <div class="banner success-banner" id="sourceBanner">
   ✓ Shared and different courses use the uploaded Qassim University study plans.
 </div>
 
-<!-- Selected majors will appear here -->
+<!-- Major selector -->
 <div class="pick-row" id="comparePicker"></div>
 
-<!-- Messages will appear here -->
+<!-- Feedback -->
 <p class="feedback" id="compareMsg"></p>
 
-<!-- Table showing topic coverage for each major -->
+<!-- Topic comparison -->
 <h2>Topic emphasis</h2>
 <p class="muted small">
   Topic coverage is calculated from course titles in the uploaded plans; it is an exploration aid, not an official curriculum rating.
 </p>
+
 <div class="table-wrap">
   <table class="compare" id="topicTable"></table>
 </div>
 
-<!-- Lists of shared and different courses -->
+<!-- Course comparison -->
 <div class="two-col wide">
 
-  <!-- Shared courses here --> 
+  <!-- Shared courses -->
   <div class="card">
     <h3>Courses you share
       <span class="count-pill" id="sharedCount">0</span>
@@ -39,7 +40,7 @@
 
 </div>
 
-<!-- Link to the study plans page -->
+<!-- Study plans link -->
 <p class="center" style="margin-top:26px">
   <a class="btn btn-primary" href="study-plans.php">
     Explore the study plans
