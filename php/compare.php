@@ -8,7 +8,7 @@ include 'header.php';
 
 <!-- Data source -->
 <div class="banner success-banner" id="sourceBanner">
-  ✓ Shared and different courses use the uploaded Qassim University study plans.
+ 
 </div>
 
 <!-- Major selector -->
