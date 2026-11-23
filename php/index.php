@@ -23,9 +23,9 @@ include 'header.php';
     <div class="hero-art" aria-hidden="true">
       <div class="orb">💻</div>
       <span class="float-icon" style="top:6%;left:8%">🤖 AI</span>
-      <span class="float-icon" style="top:0;right:12%">&lt;/&gt; Code</span>
+      <span class="float-icon" style="top:3%;right:15%">&lt;/&gt; Code</span>
       <span class="float-icon" style="top:34%;right:0">📱 Apps</span>
-      <span class="float-icon" style="bottom:18%;right:8%">🦾 Robot</span>
+      <span class="float-icon" style="bottom:25%;right:7%">🦾 Robot</span>
       <span class="float-icon" style="bottom:0%;left:12%">🗄️ Database</span>
       <span class="float-icon" style="bottom:20%;left:0">☁️ Cloud</span>
       <span class="float-icon" style="top:38%;left:-2%">🌐 Web</span>

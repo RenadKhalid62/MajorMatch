@@ -17,7 +17,7 @@ $scripts = isset($scripts) ? $scripts : [];
     <div class="container">
 
         <div class="footer-brand">
-            <strong>MajorMatch</strong> · Don't just choose your major , Explore it.
+            <strong>MajorMatch</strong> · Don't just choose your major, Explore it.
         </div>
 
         <!-- Team members -->
