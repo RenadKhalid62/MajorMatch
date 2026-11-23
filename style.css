@@ -285,7 +285,7 @@ table.compare td.best { background: #f1ecff; }
 .made-by {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .team-members {
     display: flex;
