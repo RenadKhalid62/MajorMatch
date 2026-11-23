@@ -18,10 +18,7 @@ $scripts = isset($scripts) ? $scripts : [];
 
         <strong>MajorMatch</strong> · Don't just choose your major. Explore it.
 
-        <div class="footer-note">
-            A university project prototype · College of Computer ·
-            This is an exploration tool, not an official advisor.
-        </div>
+      
 
         <!-- Team members -->
         <div class="team-section">
