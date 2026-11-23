@@ -277,3 +277,23 @@ table.compare td.best { background: #f1ecff; }
 
 .course-ar{margin:-6px 0 10px;color:#6f7190;font-size:.9rem;line-height:1.6}
 .success-banner{border-color:#b9efd8;background:#effcf7;color:#17664c}
+/* Team members */
+.team-section {
+    padding: 25px 0;
+    text-align: center;
+}
+.made-by {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-members span {
+    font-weight: 600;
+    color: var(--text);
+}
