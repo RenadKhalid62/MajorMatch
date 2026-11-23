@@ -5,7 +5,7 @@ $scripts = ['compare.js'];
 
 include 'header.php';
 ?>
-
+<p class="eyebrow">Step 7 · Study Plans</p>
 <!-- Major selector -->
 <div class="pick-row" id="comparePicker"></div>
 
