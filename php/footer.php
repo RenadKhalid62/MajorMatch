@@ -20,8 +20,8 @@ $scripts = isset($scripts) ? $scripts : [];
 
         <!-- Team members -->
         <div class="team-section">
+         <p class="made-by">Made by</p>
             <div class="team-members">
-             <p class="made-by">Made by</p>
                 <span>Raghad Alharbi - </span>
                 <span>Renad Altami - </span>
                 <span>Sara Albaidhani - </span>
