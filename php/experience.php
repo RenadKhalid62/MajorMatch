@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<!-- Page stylesheet -->
 <link rel="stylesheet" href="../css/all_styles.css">
 
 <div class="exp-container">
@@ -7,7 +8,8 @@
     
     <!-- IT -->
     <div class="exp-card" style="text-align: left;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <!-- Flexbox layout to place text on the left and button on the right -->
+         <div style="display: flex; justify-content: space-between; align-items: center;">
             <div>
                 <span class="tag">Networks (IT)</span>
                 <h3 style="margin: 10px 0 5px 0;">Connect the network</h3>
@@ -17,7 +19,7 @@
                 <button id="btn-network" class="btn-try" onclick="startNetworkExp()">Try it</button>
             </div>
         </div>
-        
+        <!-- Interactive game container -->
         <div id="body-network"></div>
     </div>
 
@@ -52,5 +54,6 @@
     </div>
 </div>
 
+<!-- JavaScript logic for the interactive experiences and ratings -->
 <script src="../js/experiences.js"></script>
 <?php include 'footer.php'; ?>
