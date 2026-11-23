@@ -31,8 +31,7 @@ $nav = [
     <!-- Dynamic page title -->
     <title><?= e($page_title) ?> · MajorMatch</title>
     <!-- Load CSS files from the main css folder -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/all_styles.css">
 </head>
 <body>
 <!-- Website header -->

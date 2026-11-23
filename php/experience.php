@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 <!-- Page stylesheet -->
-<link rel="stylesheet" href="../css/all_styles.css">
 
 <div class="exp-container">
     <h1>Major Experiences</h1>

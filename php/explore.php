@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 <!-- Page stylesheet -->
-<link rel="stylesheet" href="../css/all_styles.css">
 
 <div class="explore-wrapper">
     <!-- Page heading and instructions -->
