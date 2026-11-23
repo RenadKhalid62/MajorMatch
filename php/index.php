@@ -25,7 +25,7 @@ include 'header.php';
      <span class="float-icon" style="top:15%;left:20%">🤖 AI</span>
 <span class="float-icon" style="top:8%;right:18%">&lt;/&gt; Code</span>
 <span class="float-icon" style="top:38%;right:2%">📱 Apps</span>
-<span class="float-icon" style="bottom:18%;right:12%">🦾 Robot</span>
+<span class="float-icon" style="bottom:40%;right:8%">🦾 Robot</span>
 <span class="float-icon" style="bottom:5%;left:25%">🗄️ Database</span>
 <span class="float-icon" style="bottom:20%;left:5%">☁️ Cloud</span>
 <span class="float-icon" style="top:42%;left:2%">🌐 Web</span>
