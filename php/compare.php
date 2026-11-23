@@ -6,11 +6,6 @@ $scripts = ['compare.js'];
 include 'header.php';
 ?>
 
-<!-- Data source -->
-<div class="banner success-banner" id="sourceBanner">
- 
-</div>
-
 <!-- Major selector -->
 <div class="pick-row" id="comparePicker"></div>
 
