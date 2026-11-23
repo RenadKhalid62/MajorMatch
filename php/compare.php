@@ -1,16 +1,11 @@
 <?php
 $page_title = 'Compare';
-$active = 'compare';
+$active = 'compare'; 
 $scripts = ['compare.js'];
 
 include 'header.php';
 ?>
-
-<!-- Data source -->
-<div class="banner success-banner" id="sourceBanner">
-  ✓ Shared and different courses use the uploaded Qassim University study plans.
-</div>
-
+<p class="eyebrow">Step 7 · Study Plans</p>
 <!-- Major selector -->
 <div class="pick-row" id="comparePicker"></div>
 
