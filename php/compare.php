@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Compare';
-$active = 'compare';
+$active = 'compare'; 
 $scripts = ['compare.js'];
 
 include 'header.php';
