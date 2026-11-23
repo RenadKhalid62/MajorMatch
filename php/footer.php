@@ -18,12 +18,10 @@ $scripts = isset($scripts) ? $scripts : [];
 
         <strong>MajorMatch</strong> · Don't just choose your major. Explore it.
 
-      
-
         <!-- Team members -->
         <div class="team-section">
-            <p class="made-by">Made by</p>
             <div class="team-members">
+             <p class="made-by">Made by</p>
                 <span>Raghad Alharbi - </span>
                 <span>Renad Altami - </span>
                 <span>Sara Albaidhani - </span>
