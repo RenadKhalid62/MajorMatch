@@ -28,8 +28,8 @@ include 'header.php';
 
     <!-- Buttons (Back to Step 2 / Next to Step 4) -->
     <div class="center" style="margin-top: 24px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-        <a class="btn btn-soft" href="experience.php">← Back to Experiences</a>
-        <a class="btn btn-primary" href="quiz.php">Next : Take the Quiz →</a>
+        <a class="btn btn-soft" href="experience.php">Try Tech Experiences</a>
+        <a class="btn btn-primary" href="quiz.php">Take the Quiz</a>
     </div>
 </div>
 

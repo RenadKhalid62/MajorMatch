@@ -62,8 +62,8 @@ include 'header.php';
     </div>
     <!-- Buttons (Back to Step 1 / Next to Step 3) -->
     <div class="center" style="margin-top: 32px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-        <a class="btn btn-soft" href="majors.php">← Back to Majors</a>
-        <a class="btn btn-primary" href="explore.php">Next : Build Your Profile →</a>
+        <a class="btn btn-soft" href="majors.php">Majors</a>
+        <a class="btn btn-primary" href="explore.php">Build Your Profile</a>
     </div>
 </div>
 

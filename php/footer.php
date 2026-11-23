@@ -16,16 +16,15 @@ $scripts = isset($scripts) ? $scripts : [];
 <footer class="footer">
     <div class="container">
 
-        <strong>MajorMatch</strong> · Don't just choose your major. Explore it.
+        <div class="footer-brand">
+            <strong>MajorMatch</strong> · Don't just choose your major, Explore it.
+        </div>
 
         <!-- Team members -->
-        <div class="team-section">
-         <p class="made-by">Made by :</p>
-            <div class="team-members">
-                <span>Raghad Alharbi - </span>
-                <span>Renad Altami - </span>
-                <span>Sara Albaidhani - </span>
-                <span>Ghala Al</span>
+        <div class="footer-credits">
+            <span class="made-by">Made by</span>
+            <div class="team-names">
+                Raghad Alharbi · Renad Altami · Sara Albaidhani · Ghala Alkuraydis
             </div>
         </div>
 
