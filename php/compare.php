@@ -5,17 +5,13 @@ $scripts = ['compare.js'];
 
 include 'header.php';
 ?>
-<p class="eyebrow">Step 7 · Study Plans</p>
-<!-- Major selector -->
-<div class="pick-row" id="comparePicker"></div>
-
-<!-- Feedback -->
-<p class="feedback" id="compareMsg"></p>
-
 <!-- Topic comparison -->
-<h2>Topic emphasis</h2>
+<div class="step-label">STEP 6 · COMPARE</div>
+
+<h2>Course Comparison</h2>
+
 <p class="muted small">
-  Topic coverage is calculated from course titles in the uploaded plans; it is an exploration aid, not an official curriculum rating.
+Explore the topics covered by each major based on its study plan.
 </p>
 
 <div class="table-wrap">
