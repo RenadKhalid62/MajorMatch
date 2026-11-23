@@ -22,14 +22,14 @@ include 'header.php';
     <!-- Decorative icons representing different technology fields. -->
     <div class="hero-art" aria-hidden="true">
       <div class="orb">💻</div>
-      <span class="float-icon" style="top:6%;left:8%">🤖 AI</span>
-      <span class="float-icon" style="top:0;right:12%">&lt;/&gt; Code</span>
-      <span class="float-icon" style="top:34%;right:0">📱 Apps</span>
-      <span class="float-icon" style="bottom:18%;right:8%">🦾 Robot</span>
-      <span class="float-icon" style="bottom:0%;left:12%">🗄️ Database</span>
-      <span class="float-icon" style="bottom:20%;left:0">☁️ Cloud</span>
-      <span class="float-icon" style="top:38%;left:-2%">🌐 Web</span>
-      <span class="float-icon" style="bottom:0%;right:20%">🎮 Game</span>
+     <span class="float-icon" style="top:15%;left:20%">🤖 AI</span>
+<span class="float-icon" style="top:8%;right:18%">&lt;/&gt; Code</span>
+<span class="float-icon" style="top:38%;right:2%">📱 Apps</span>
+<span class="float-icon" style="bottom:18%;right:12%">🦾 Robot</span>
+<span class="float-icon" style="bottom:5%;left:25%">🗄️ Database</span>
+<span class="float-icon" style="bottom:20%;left:5%">☁️ Cloud</span>
+<span class="float-icon" style="top:42%;left:2%">🌐 Web</span>
+<span class="float-icon" style="bottom:5%;right:25%">🎮 Game</span>
     </div>
   </div>
 </section>
