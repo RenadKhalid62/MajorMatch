@@ -297,3 +297,11 @@ table.compare td.best { background: #f1ecff; }
     font-weight: 600;
     color: var(--text);
 }
+/* Remove side spaces around the navbar */
+.navbar .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
