@@ -24,7 +24,7 @@ $scripts = isset($scripts) ? $scripts : [];
         <div class="footer-credits">
             <span class="made-by">Made by</span>
             <div class="team-names">
-                Raghad Alharbi · Renad Altami · Sara Albaidhani · Ghala Al
+                Raghad Alharbi · Renad Altami · Sara Albaidhani · Ghala Alkuraydis
             </div>
         </div>
 
