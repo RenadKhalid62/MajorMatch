@@ -240,7 +240,7 @@ a { color: var(--royal); }
 .disclaimer { text-align: center; color: var(--muted); font-style: italic; margin-top: 24px; }
 
 /* ---------- compare + plans ---------- */
-.table-wrap { overflow-x: auto; }
+.table-wrap { overflow-x: auto;  margin: 0  0 -12px; }
 table.compare { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 table.compare th { background: var(--navy); color: #fff; padding: 14px; text-align: center; font-size: .95rem; }
 table.compare th:first-child, table.compare td:first-child { text-align: left; }

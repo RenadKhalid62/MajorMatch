@@ -14,12 +14,7 @@ include 'header.php';
 </section>
 
 <section class="section">
-  <div class="container">
-
-    <div class="banner success-banner">
-      Course data is based on Qassim University study plans.
-    </div>
-
+<div class="container">
     <!-- Major selection -->
     <div class="pick-row" id="planTabs"></div>
 

@@ -35,7 +35,7 @@ a {
 
 .container {
   width: 92%;
-  max-width: 1120px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -879,7 +879,8 @@ a {
 /* ---------- 11. Compare & Study Plans Pages ---------- */
 .pick-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
   gap: 14px;
   margin-bottom: 24px;
 }
@@ -1137,7 +1138,7 @@ table.compare td.best {
   }
   .nav-links.open { display: flex; }
   .nav-links .btn { margin: 8px 0 0 0; text-align: center; }
-  .pick-row { grid-template-columns: 1fr; }
+  .pick-row { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media screen and (max-width: 520px) {
@@ -1151,3 +1152,11 @@ table.compare td.best {
   body { background-color: #ffffff; color: #000000; }
   .navbar, .footer, .btn, .nav-toggle { display: none; }
 }
+/* for the table in compare.php, to make it more readable */
+.topic-section {
+ margin:  0 100px;
+}
+.compare-picker{
+  margin:  50px ; 0 100px;
+}
+
