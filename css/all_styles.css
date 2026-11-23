@@ -20,7 +20,7 @@
 .exp-icon { font-size: 3em; margin-bottom: 15px; display: block; }
 .exp-title { margin: 10px 0; color: #1e293b; font-size: 1.4em; }
 
-/* أزرار الألعاب التفاعلية */
+/* Interactive Game Buttons */
 .modern-btn { padding: 8px 16px; border: none; border-radius: 6px; margin: 4px; background-color: #e0e7ff; color: #4f46e5; cursor: pointer; font-weight: bold; font-family: inherit; transition: 0.3s; }
 .modern-btn:hover { background-color: #4f46e5; color: white; }
 .dev-btn { padding: 15px 25px; border: 2px solid #cbd5e1; border-radius: 10px; background: white; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.2s; }
