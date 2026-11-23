@@ -283,8 +283,9 @@ table.compare td.best { background: #f1ecff; }
     text-align: center;
 }
 .made-by {
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 .team-members {
     display: flex;
@@ -296,6 +297,7 @@ table.compare td.best { background: #f1ecff; }
 .team-members span {
     font-weight: 600;
     color: var(--text);
+    font-size: 16px;
 }
 /* Remove side spaces around the navbar */
 .navbar .container {
