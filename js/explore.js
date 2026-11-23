@@ -93,7 +93,8 @@ function saveInterests() {
 
     // Show recommendation and a link to the experiences page
     document.getElementById("save-msg").innerHTML =
-        "✅ Your interests have been saved!<br>" +
-        "<span style='color:#1e293b; display:block; margin-top:10px;'>Based on your choices, you lean towards: <b style='color:#4f46e5;'>" + resultText + "</b></span>" +
-        "<a href='experience.php' class='btn-save' style='display:inline-block; text-decoration:none; margin-top:15px;'>Try Tech Experiences ➡️</a>";
+        "<div style='background:#ffffff; border:1px solid #e3e6f3; border-left:5px solid #4f46e5; border-radius:14px; padding:16px 20px; max-width:520px; margin:20px auto 0; box-shadow:0 4px 12px rgba(36,71,214,0.08);'>" +
+        "<div style='color:#1fa463; margin-bottom:6px;'>✅ Your interests have been saved!</div>" +
+        "<div style='color:#1e293b; font-weight:normal;'>Based on your choices, you lean towards: <b style='color:#4f46e5;'>" + resultText + "</b></div>" +
+        "</div>";
 }

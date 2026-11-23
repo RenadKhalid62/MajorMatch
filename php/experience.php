@@ -1,9 +1,18 @@
-<?php include 'header.php'; ?>
-<!-- Page stylesheet -->
+<?php 
+$page_title = 'Major Experiences';
+$active = 'try';
+include 'header.php';
+?>
+
+<section class="page-head">
+    <div class="container">
+        <p class="eyebrow">Step 2 · Try &amp; Discover</p>
+        <h1>Major Experiences</h1>
+        <p class="muted">Try quick hands-on mini activities to feel what each computer major is like.</p>
+    </div>
+</section>
 
 <div class="exp-container">
-    <h1>Major Experiences</h1>
-    <hr>
     
     <!-- IT -->
     <div class="exp-card" style="text-align: left;">
@@ -50,6 +59,11 @@
             </div>
         </div>
         <div id="body-logic"></div>
+    </div>
+    <!-- Buttons (Back to Step 1 / Next to Step 3) -->
+    <div class="center" style="margin-top: 32px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <a class="btn btn-soft" href="majors.php">← Back to Majors</a>
+        <a class="btn btn-primary" href="explore.php">Next : Build Your Profile →</a>
     </div>
 </div>
 
