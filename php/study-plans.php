@@ -5,6 +5,7 @@ $scripts = ['study-plans.js'];
 include 'header.php';
 ?>
 
+
 <section class="page-head">
   <div class="container">
     <p class="eyebrow">Step 7 · Study Plans</p>
