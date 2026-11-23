@@ -1,3 +1,11 @@
+<?php
+$page_title = 'Compare';
+$active = 'compare';
+$scripts = ['compare.js'];
+
+include 'header.php';
+?>
+
 <!-- Data source -->
 <div class="banner success-banner" id="sourceBanner">
   ✓ Shared and different courses use the uploaded Qassim University study plans.
@@ -46,3 +54,5 @@
     Explore the study plans
   </a>
 </p>
+
+<?php include 'footer.php'; ?>
