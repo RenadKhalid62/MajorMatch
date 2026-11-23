@@ -16,13 +16,22 @@ $scripts = isset($scripts) ? $scripts : [];
 <footer class="footer">
     <div class="container">
 
-        <!-- Website name and slogan -->
         <strong>MajorMatch</strong> · Don't just choose your major. Explore it.
 
-        <!-- Project information -->
         <div class="footer-note">
             A university project prototype · College of Computer ·
             This is an exploration tool, not an official advisor.
+        </div>
+
+        <!-- Team members -->
+        <div class="team-section">
+            <p class="made-by">Made by</p>
+            <div class="team-members">
+                <span>Raghad Alharbi - </span>
+                <span>Renad Altami - </span>
+                <span>Sara Albaidhani - </span>
+                <span>Ghala Al</span>
+            </div>
         </div>
 
     </div>
@@ -39,4 +48,5 @@ $scripts = isset($scripts) ? $scripts : [];
 
 <!-- Close HTML document -->
 </body>
+
 </html>
