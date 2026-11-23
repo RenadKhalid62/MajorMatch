@@ -1,6 +1,6 @@
 <?php
 // Return courses as JSON for the study plans and compare pages.
-require_once DIR . '/db.php';
+require_once __DIR__. '/db.php';
 header('Content-Type: application/json; charset=utf-8');
 
 // Match each course's major ID with its major name.
