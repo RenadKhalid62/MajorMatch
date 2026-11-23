@@ -1,6 +1,7 @@
+
 <?php
 // Set the page title and mark the current page as Home.
-$page_title = 'Which Computer Major Fits You?';
+$page_title = 'Major Match';
 $active = 'home';
 // Include the shared website header.
 include 'header.php';
@@ -73,5 +74,19 @@ include 'header.php';
     </div>
   </div>
 </section>
+
+<!-- Team members section -->
+<section class="team-section">
+  <div class="container">
+    <p class="made-by">Made by</p>
+    <div class="team-members">
+      <span>Raghad Alharbi</span>
+      <span>Renad Altami</span>
+      <span>Sara Albaidhani</span>
+      <span>Ghala Al</span>
+    </div>
+  </div>
+</section>
+
 <!-- Include the shared website footer. -->
 <?php include 'footer.php'; ?>
