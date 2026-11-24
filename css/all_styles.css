@@ -242,13 +242,14 @@ a {
 
 .two-col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,minmax(0,580px));
+  justify-content: center;
   gap: 22px;
   align-items: start;
 }
 
 .two-col.wide {
-  margin-top: 22px;
+  margin-top: 22px;  
 }
 
 .chips {
@@ -1017,7 +1018,7 @@ table.compare td.best {
   border-radius: 20px;
   padding: 2px 10px;
   font-size: 0.88rem;
-  margin-left: 6px;
+  margin-left: auto;
 }
 
 /* Study plan levels and course cards */
