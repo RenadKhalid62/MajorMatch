@@ -40,6 +40,10 @@ var mine = courses.filter(function (course) {
   return course.major === current;
 });
 
+var requiredCourses = mine.filter(function (course) {
+  return !course.course_type || course.course_type === 'required';
+});
+
 $('#planSummary').textContent =
   MAJORS[current].name + ' · ' + mine.length + ' courses';
 
@@ -48,7 +52,7 @@ var found = 0;
 
 // Display courses by level.
 for (var level = 1; level <= 10; level++) {
-  var list = mine.filter(function (course) {
+  var list = requiredCourses.filter(function (course) {
     return Number(course.level) === level &&
       (!term || (course.name + ' ' + course.code).toLowerCase().includes(term));
   });
@@ -64,6 +68,23 @@ for (var level = 1; level <= 10; level++) {
     '</div></section>';
 }
 
+// Display electives.
+['major_elective', 'free_elective'].forEach(function (type) {
+  var electives = mine.filter(function (course) {
+    return course.course_type === type &&
+      (!term || (course.name + ' ' + course.code).toLowerCase().includes(term));
+  });
+
+  found += electives.length;
+  if (!electives.length && term) return;
+
+  html += '<section class="level"><h3>' +
+    (type === 'major_elective' ? 'Major Electives (Major Requirements)' : 'Free Electives (Category Requirements)') +
+    '</h3><div class="course-grid">' +
+    (electives.length ? electives.map(card).join('') : '<p class="muted">No courses listed.</p>') +
+    '</div></section>';
+});
+
 $('#planLevels').innerHTML = found || !term
   ? html
   : '<p class="muted">No matching courses found.</p>';
@@ -74,10 +95,10 @@ function card(course) {
 return '<div class="course-card">' +
 '<span class="code">' + course.code + '</span>' +
 '<h4>' + course.name + '</h4>' +
-(course.name_ar ? '<p class="course-ar">' + course.name_ar + '</p>' : '') +
 '<div class="course-meta">' +
 '<span>⏱ ' + course.credits + ' credit hours</span>' +
 '<span>' + (course.prerequisite ? 'Prerequisite: ' + course.prerequisite : 'No prerequisite') + '</span>' +
+'<span>Type: ' + (course.course_type || 'required') + '</span>' +
 '</div></div>';
 }
 

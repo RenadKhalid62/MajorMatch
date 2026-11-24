@@ -39,6 +39,7 @@ foreach (mm_rows('courses', $where) as $course) {
         'name_ar' => $course['course_name_ar'] ?? $course['course_name'],
         'name_en' => $course['course_name_en'] ?? '',
         'credits' => (int) $course['credit_hours'],
+        'course_type' => $course['course_type'] ?? 'required',
         'prerequisite' => $course['prerequisite'],
         'sample' => (int) $course['is_sample'] === 1,
     ];
