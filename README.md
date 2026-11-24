@@ -1,4 +1,4 @@
-MajorMatch
+# MajorMatch
 
 MajorMatch is a website designed to help students explore and compare computer majors in Computer Science, Information Technology, and Computer Engineering.
 
