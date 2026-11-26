@@ -111,7 +111,7 @@ var COMPARE_ROWS = [
     { topic: "AI / Machine Learning", cs: 4, it: 2, ce: 4 },
     { topic: "Web", cs: 3, it: 4, ce: 1 },
     { topic: "Networks", cs: 1, it: 4, ce: 3 },
-    { topic: "Security", cs: 3, it: 4, ce: 2 },
+    { topic: "Security", cs: 2, it: 3, ce: 1 },
     { topic: "Hardware / Embedded", cs: 1, it: 1, ce: 5 },
     { topic: "Robotics / Control", cs: 1, it: 0, ce: 5 },
     { topic: "Databases", cs: 3, it: 5, ce: 2 },

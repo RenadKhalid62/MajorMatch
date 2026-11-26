@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Compare';
 $active = 'compare';
-$scripts = ['data.js', 'compare.js'];
+$scripts = [ 'compare.js'];
 
 include 'header.php';
 ?>
