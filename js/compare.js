@@ -79,27 +79,28 @@ var topicRules = [
 { topic: 'Systems', words: ['نظام التشغيل', 'النظم', 'Systems', 'Operating System'] }
 ];
 
+var COMPARE_ROWS = [
+  { topic: "Programming", cs: 5, it: 4, ce: 3 },
+  { topic: "AI / Machine Learning", cs: 4, it: 2, ce: 4 },
+  { topic: "Web", cs: 3, it: 4, ce: 1 },
+  { topic: "Networks", cs: 2, it: 3, ce: 1 },
+  { topic: "Security", cs: 2, it: 3, ce: 1},
+  { topic: "Hardware / Embedded", cs: 1, it: 0, ce: 5 },
+  { topic: "Robotics / Control", cs: 1, it: 0, ce: 5 },
+  { topic: "Databases", cs: 2, it: 5, ce: 2 },
+  { topic: "Mathematics", cs: 4, it: 2, ce: 4 },
+  { topic: "Systems", cs: 3, it: 3, ce: 4 }
+];
+
 // Count courses that match each topic.
 function coverage(major, rule) {
-var count = 0;
+  var row = COMPARE_ROWS.find(function (item) {
+    return item.topic === rule.topic;
+  });
 
-allCourses.forEach(function (course) {
-  if (course.major !== major) return;
+  if (!row || typeof row[major] === 'undefined') return 0;
 
-  var courseText = (
-    (course.name || '') + ' ' +
-    (course.name_ar || '') + ' ' +
-    (course.name_en || '')
-  ).toLowerCase();
-
-  if (rule.words.some(function (word) {
-    return courseText.indexOf(word.toLowerCase()) !== -1;
-  })) {
-    count++;
-  }
-});
-
-return Math.min(5, count);
+  return Math.max(0, Math.min(5, Number(row[major]) || 0));
 }
 
 // Create the major selection buttons.
@@ -158,13 +159,8 @@ var header = '<tr><th>Topic</th>' +
   '</tr>';
 
 var rows = topicRules.map(function (rule) {
-  
-var rowData = COMPARE_ROWS.find(function (row) {
-return row.topic === rule.topic;
-});
-
 var values = selected.map(function (major) {
-    return rowData ? rowData[major] : 0;
+return coverage(major, rule);
 });
 
 var maxValue = Math.max.apply(null, values);
