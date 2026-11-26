@@ -1,4 +1,4 @@
-/* ---------- 1. General Reset & Typography ---------- */
+/* 1. General Reset & Typography */
 * {
   box-sizing: border-box;
 }
@@ -58,7 +58,7 @@ a {
   margin-bottom: 10px;
 }
 
-/* ---------- 2. Shared Buttons ---------- */
+/* 2. Shared Buttons */
 .btn {
   display: inline-block;
   border: none;
@@ -120,7 +120,7 @@ a {
   margin: 14px 0;
 }
 
-/* ---------- 3. Navigation Bar (Header) ---------- */
+/* 3. Navigation Bar (Header) */
 .navbar {
   position: sticky;
   top: 0;
@@ -204,7 +204,7 @@ a {
   color: #0d1b4c;
 }
 
-/* ---------- 4. Shared Sections, Cards & Chips ---------- */
+/* 4. Shared Sections, Cards & Chips */
 .section {
   padding: 52px 0;
 }
@@ -298,12 +298,6 @@ a {
   font-weight: 600;
 }
 
-.success-banner {
-  background-color: #effcf7;
-  border-color: #b9efd8;
-  color: #17664c;
-}
-
 .warn {
   background-color: #fff4e0;
   color: #8a5600;
@@ -319,7 +313,7 @@ a {
   margin: 10px 0 0 0;
 }
 
-/* ---------- 5. Home Page (index.php) ---------- */
+/* 5. Home Page (index.php) */
 .hero {
   background: linear-gradient(135deg, #0d1b4c, #2447d6, #5b5bf0);
   color: #ffffff;
@@ -483,13 +477,13 @@ a {
   color: #ffffff;
 }
 
-/* ---------- 6. Majors & Major Details Pages ---------- */
+/* 6. Majors & Major Details Pages */
 .major-card {
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-top: 6px solid #4f46e5;
+  border-top: 6px solid var(--c, #4f46e5);
   transition: 0.2s;
 }
 
@@ -541,22 +535,12 @@ a {
   margin-top: 4px;
 }
 
-/* ---------- 7. Explore Tech Fields Page (explore.php) ---------- */
+/* 7. Explore Tech Fields Page (explore.php) */
 .explore-wrapper {
   max-width: 900px;
   margin: 40px auto;
   text-align: center;
   min-height: 60vh;
-  font-family: sans-serif;
-}
-
-.explore-title {
-  color: #1e293b;
-}
-
-.explore-subtitle {
-  color: #64748b;
-  font-size: 1.1em;
 }
 
 .fields-container {
@@ -605,19 +589,11 @@ a {
   color: green;
 }
 
-/* ---------- 8. Tech Experiences Page (experience.php) ---------- */
+/* 8. Tech Experiences Page (experience.php) */
 .exp-container {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 16px;
-  font-family: sans-serif;
-}
-
-.exp-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
 }
 
 .exp-card {
@@ -668,18 +644,6 @@ a {
   margin-bottom: 10px;
 }
 
-.exp-icon {
-  font-size: 3em;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.exp-title {
-  margin: 10px 0;
-  color: #1e293b;
-  font-size: 1.4em;
-}
-
 /* Interactive Game Buttons */
 .modern-btn {
   padding: 8px 16px;
@@ -725,7 +689,7 @@ a {
   background: white;
 }
 
-/* ---------- 9. Quiz Page (quiz.php) ---------- */
+/* 9. Quiz Page (quiz.php) */
 .quiz-wrap {
   max-width: 720px;
   margin: 0 auto;
@@ -802,7 +766,7 @@ a {
   margin-top: 20px;
 }
 
-/* ---------- 10. Result Page (result.php) ---------- */
+/* 10. Result Page (result.php) */
 .result-top {
   text-align: center;
   padding: 36px 24px;
@@ -874,17 +838,10 @@ a {
   background-color: #ece6ff;
 }
 
-.disclaimer {
-  text-align: center;
-  color: #64748b;
-  font-style: italic;
-  margin-top: 24px;
-}
-
-/* ---------- 11. Compare & Study Plans Pages ---------- */
+/* 11. Compare & Study Plans Pages */
 .pick-row {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
+  grid-template-columns: repeat(3, minmax(0, 360px));
   justify-content: center;
   gap: 14px;
   margin-bottom: 24px;
@@ -1087,13 +1044,6 @@ table.compare td.best {
   font-size: 1.02rem;
 }
 
-.course-ar {
-  margin: 0 0 10px 0;
-  color: #64748b;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
 .course-meta {
   display: flex;
   flex-direction: column;
@@ -1102,7 +1052,16 @@ table.compare td.best {
   color: #64748b;
 }
 
-/* ---------- 12. Footer ---------- */
+/* for the table in compare.php, to make it more readable */
+.compare-picker {
+  margin: 40px auto 24px auto;
+}
+
+.topic-section {
+  margin: 0 40px;
+}
+
+/* 12. Footer */
 .footer {
   background-color: #0d1b4c;
   color: #cdd5f6;
@@ -1139,7 +1098,7 @@ table.compare td.best {
   font-weight: 500;
 }
 
-/* ---------- 13. Media Queries (Responsive & Print) ---------- */
+/* 13. Media Queries (Responsive & Print) */
 @media screen and (max-width: 900px) {
   h1, .hero h1 { font-size: 2.1rem; }
   .hero-inner { grid-template-columns: 1fr; }
@@ -1162,6 +1121,7 @@ table.compare td.best {
     padding: 14px 4%;
     border-bottom: 1px solid #e3e6f3;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    topic-section { margin: 0 14px; }
   }
   .nav-links.open { display: flex; }
   .nav-links .btn { margin: 8px 0 0 0; text-align: center; }
@@ -1179,11 +1139,3 @@ table.compare td.best {
   body { background-color: #ffffff; color: #000000; }
   .navbar, .footer, .btn, .nav-toggle { display: none; }
 }
-/* for the table in compare.php, to make it more readable */
-.topic-section {
- margin:  0 100px;
-}
-.compare-picker{
-  margin:  50px ; 0 100px;
-}
-

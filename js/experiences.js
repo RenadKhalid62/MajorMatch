@@ -224,7 +224,7 @@ function toggleB() {
     checkLogic();
 }
 
-// Calculate the gate output (AND, OR, NOT) and update the light bulb
+// Calculate the gate output (AND, OR) and update the light bulb
 function checkLogic() {
     var gate = document.getElementById("gate-type").value;
     var output = 0;

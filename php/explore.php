@@ -6,6 +6,7 @@ include 'header.php';
 
 <section class="page-head">
     <div class="container">
+        <!-- Page heading and instructions -->
         <p class="eyebrow">Step 3 · Build Your Profile</p>
         <h1>Explore Tech Fields</h1>
         <p class="muted">You're building your profile... Select the tech fields that interest you the most!</p>
@@ -13,10 +14,6 @@ include 'header.php';
 </section>
 
 <div class="explore-wrapper">
-    <!-- Page heading and instructions -->
-    <h1 class="explore-title">Explore Tech Fields</h1>
-    <p class="explore-subtitle">You're building your profile... Select the tech fields that interest you the most!</p>
-    
     <!-- Field cards will be generated here using JavaScript -->
     <div id="fields-container" class="fields-container"></div>
 
