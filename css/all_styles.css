@@ -129,14 +129,16 @@ a {
   border-bottom: 1px solid #e3e6f3;
   box-shadow: 0 2px 10px rgba(13, 27, 76, 0.05);
 }
-
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 68px;
 }
-
+.navbar .container {
+  width: 98% !important;
+  max-width: none !important;
+}
 .logo {
   display: flex;
   align-items: center;

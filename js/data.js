@@ -107,14 +107,14 @@ var EXPERIENCE_META = {
 
 // Topic scores used to compare the majors (0-5).
 var COMPARE_ROWS = [
-  {topic:'Programming',cs:5,it:3,ce:3},
-  {topic:'AI',cs:4,it:2,ce:3},
-  {topic:'Web',cs:3,it:5,ce:1},
-  {topic:'Networks',cs:1,it:4,ce:3},
-  {topic:'Security',cs:2,it:2,ce:1},
-  {topic:'Hardware',cs:1,it:1,ce:5},
-  {topic:'Robotics',cs:1,it:0,ce:5},
-  {topic:'Databases',cs:2,it:5,ce:1},
-  {topic:'Mathematics',cs:4,it:2,ce:4},
-  {topic:'Systems',cs:3,it:3,ce:4}
+    { topic: "Programming", cs: 5, it: 4, ce: 3 },
+    { topic: "AI / Machine Learning", cs: 4, it: 2, ce: 4 },
+    { topic: "Web", cs: 3, it: 4, ce: 1 },
+    { topic: "Networks", cs: 1, it: 4, ce: 3 },
+    { topic: "Security", cs: 3, it: 4, ce: 2 },
+    { topic: "Hardware / Embedded", cs: 1, it: 1, ce: 5 },
+    { topic: "Robotics / Control", cs: 1, it: 0, ce: 5 },
+    { topic: "Databases", cs: 3, it: 5, ce: 2 },
+    { topic: "Mathematics", cs: 4, it: 2, ce: 4 },
+    { topic: "Systems", cs: 3, it: 3, ce: 4 }
 ];
