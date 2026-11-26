@@ -158,19 +158,24 @@ var header = '<tr><th>Topic</th>' +
   '</tr>';
 
 var rows = topicRules.map(function (rule) {
-  var values = selected.map(function (major) {
-    return coverage(major, rule);
-  });
+  
+var rowData = COMPARE_ROWS.find(function (row) {
+return row.topic === rule.topic;
+});
 
-  var maxValue = Math.max.apply(null, values);
+var values = selected.map(function (major) {
+    return rowData ? rowData[major] : 0;
+});
 
-  return '<tr>' +
+var maxValue = Math.max.apply(null, values);
+
+return '<tr>' +
     '<td><b>' + escapeHTML(rule.topic) + '</b></td>' +
     values.map(function (value) {
-      var bestClass = value === maxValue && maxValue > 0 ? 'best' : '';
+        var bestClass = value === maxValue && maxValue > 0 ? 'best' : '';
 
-      return '<td class="' + bestClass + '">' +
-        dots(value) + '</td>';
+        return '<td class="' + bestClass + '">' +
+            dots(value) + '</td>';
     }).join('') +
     '</tr>';
 }).join('');
