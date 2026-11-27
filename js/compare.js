@@ -79,7 +79,6 @@ var topicRules = [
 { topic: 'Systems', words: ['نظام التشغيل', 'النظم', 'Systems', 'Operating System'] }
 ];
 
-
 // Count courses that match each topic.
 function coverage(major, rule) {
   var row = COMPARE_ROWS.find(function (item) {
