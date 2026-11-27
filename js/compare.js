@@ -81,7 +81,7 @@ var topicRules = [
 
 var COMPARE_ROWS = [
   { topic: "Programming", cs: 5, it: 4, ce: 3 },
-  { topic: "AI / Machine Learning", cs: 4, it: 2, ce: 4 },
+  { topic: "AI / Machine Learning", cs: 4, it: 2, ce: 3 },
   { topic: "Web", cs: 3, it: 4, ce: 1 },
   { topic: "Networks", cs: 2, it: 3, ce: 1 },
   { topic: "Security", cs: 2, it: 3, ce: 1},
@@ -91,7 +91,6 @@ var COMPARE_ROWS = [
   { topic: "Mathematics", cs: 4, it: 2, ce: 4 },
   { topic: "Systems", cs: 3, it: 3, ce: 4 }
 ];
-
 // Count courses that match each topic.
 function coverage(major, rule) {
   var row = COMPARE_ROWS.find(function (item) {
