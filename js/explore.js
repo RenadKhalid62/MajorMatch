@@ -91,7 +91,7 @@ function saveInterests() {
 
     var resultText = bestMajors.join(" & ");
 
-    // Show recommendation and a link to the experiences page
+    // Show recommendation
     document.getElementById("save-msg").innerHTML =
         "<div style='background:#ffffff; border:1px solid #e3e6f3; border-left:5px solid #4f46e5; border-radius:14px; padding:16px 24px; max-width:680px; margin:20px auto 0; box-shadow:0 4px 12px rgba(36,71,214,0.08);'>" +
         "<div style='color:#1fa463; margin-bottom:6px;'>✅ Your interests have been saved!</div>" +

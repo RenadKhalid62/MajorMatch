@@ -36,7 +36,7 @@ Explore the topics covered by each major based on its study plan.
 
   <!-- Shared courses -->
   <div class="card">
-    <h3>shared Courses
+    <h3>Shared Courses
       <span class="count-pill" id="sharedCount">0</span>
     </h3>
     <div id="sharedList"></div>
